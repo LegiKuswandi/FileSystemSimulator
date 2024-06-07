@@ -6,6 +6,8 @@ import sys
 from directory_operations import DirectoryOperations
 from file_operations import FileOperations
 from utils import UtilityCommands
+from colorama import init, Fore, Style
+import time
 
 class CommandHandler:
     def __init__(self):
@@ -18,6 +20,24 @@ class CommandHandler:
 
     # Fungsi utama untuk menjalankan CLI
     def main(self):
+        self.utils.cls_command()
+        print(Fore.CYAN + Style.BRIGHT + """    
+     _  __    _                             _      ______ 
+    | |/ /   | |                           | |    |____  |
+    | ' / ___| | ___  _ __ ___  _ __   ___ | | __     / / 
+    |  < / _ \ |/ _ \| '_ ` _ \| '_ \ / _ \| |/ /    / /  
+    | . \  __/ | (_) | | | | | | |_) | (_) |   <    / /   
+    |_|\_\___|_|\___/|_| |_| |_| .__/ \___/|_|\_\  /_/    
+                                | |                        
+                                |_|                                                        
+        """)
+        print(Fore.CYAN + Style.BRIGHT +  "               ===========================")
+        print(Fore.CYAN + Style.BRIGHT +  "                   Welcome to Daoa OS  ")
+        print(Fore.CYAN + Style.BRIGHT +  "               ===========================\n")
+        print(Fore.WHITE + Style.BRIGHT + "   Thank you for trying to use this OS!")
+        print(Fore.WHITE + Style.BRIGHT + "   Hope you enjoy!")
+        print(Fore.WHITE + Style.BRIGHT + "   Type 'root' first, and u can enjoy using the command.\n")
+
         while True:  # Loop utama untuk CLI
             command = input(f"{self.path}$ ").strip().split()  # Membaca input pengguna dan membagi menjadi perintah dan argumen
             if not command:  # Jika tidak ada perintah yang diberikan, lanjutkan loop

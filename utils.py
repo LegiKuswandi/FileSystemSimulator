@@ -21,9 +21,9 @@ class UtilityCommands:
         print("  root      : Initialize root directory")
         print("  cls       : Clear the screen")
         print("  rename    : Rename a file or directory")
-        print("  writefile : Rename a file or directory")
-        print("  readfile  : Rename a file or directory")
-        print("  filesize  : Rename a file or directory")
+        print("  writefile : Write a file in the current directory")
+        print("  readfile  : Read a file in the current directory")
+        print("  filesize  : Read a size of file in the current directory")
         print("  shutdown  : Exit the CLI") 
 
     # Menampilkan daftar file dan direktori dalam direktori saat ini
@@ -37,7 +37,7 @@ class UtilityCommands:
     # Mencetak struktur direktori secara rekursif
     def _print_directory_tree(self, directory, prefix):
         for key in sorted(directory.keys()):  # Iterasi melalui setiap item dalam direktori secara berurutan
-            if directory[key] is None:  # Jika item adalah file
+            if ".txt" in key:  # Jika item adalah file
                 print(f"{prefix}├── {key}")
             else:  # Jika item adalah direktori
                 print(f"{prefix}├── {key}/")

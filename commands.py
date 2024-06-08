@@ -32,7 +32,7 @@ class CommandHandler:
                                 |_|                                                        
         """)
         print(Fore.CYAN + Style.BRIGHT +  "               ===========================")
-        print(Fore.CYAN + Style.BRIGHT +  "                   Welcome to Daoa OS  ")
+        print(Fore.CYAN + Style.BRIGHT +  "                   Welcome to DAL OS  ")
         print(Fore.CYAN + Style.BRIGHT +  "               ===========================\n")
         print(Fore.WHITE + Style.BRIGHT + "   Thank you for trying to use this OS!")
         print(Fore.WHITE + Style.BRIGHT + "   Hope you enjoy!")
@@ -49,7 +49,7 @@ class CommandHandler:
             # Menjalankan perintah sesuai input pengguna
             if cmd == 'root':
                 self.utils.root_command()
-            elif self.root is None:  # Jika root belum diinisialisasi, minta pengguna untuk menginisialisasi root terlebih dahulu
+            elif self.root is None:  # Jika root belum diinisialisasi, minta pengguna untuk menginisialisasi root terlebih dahulu.
                 print("Please initialize the root directory first by using the 'root' command.")
             elif cmd == 'help':
                 self.utils.help_command()

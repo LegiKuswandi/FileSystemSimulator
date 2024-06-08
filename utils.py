@@ -24,7 +24,7 @@ class UtilityCommands:
         print("  writefile : Rename a file or directory")
         print("  readfile  : Rename a file or directory")
         print("  filesize  : Rename a file or directory")
-        print("  shutdown  : Exit the CLI")
+        print("  shutdown  : Exit the CLI") 
 
     # Menampilkan daftar file dan direktori dalam direktori saat ini
     def listdir_command(self):

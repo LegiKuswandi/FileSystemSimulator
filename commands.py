@@ -35,7 +35,7 @@ class CommandHandler:
         print(Fore.CYAN + Style.BRIGHT +  "                   Welcome to DAL OS  ")
         print(Fore.CYAN + Style.BRIGHT +  "               ===========================\n")
         print(Fore.WHITE + Style.BRIGHT + "   Thank you for trying to use this OS!")
-        print(Fore.WHITE + Style.BRIGHT + "   Hope you enjoy!")
+        print(Fore.WHITE + Style.BRIGHT + "   Hope you enjoy!\n")
         print(Fore.WHITE + Style.BRIGHT + "   Type 'root' first, and u can enjoy using the command.\n")
 
         while True:  # Loop utama untuk CLI

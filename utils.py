@@ -48,7 +48,7 @@ class UtilityCommands:
         self.command_handler.root = {}  # Membuat direktori root baru
         self.command_handler.current_directory = self.command_handler.root  # Mengatur direktori saat ini ke root
         self.command_handler.path = "/"  # Mengatur jalur ke root
-        print("Root directory initialized.")
+        print("\n Root directory initialized.\n\n Type 'help' to display commands that can used\n")
 
     # Membersihkan layar
     def cls_command(self):

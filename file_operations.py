@@ -81,6 +81,8 @@ class FileOperations:
         current_directory = self.command_handler.current_directory
         if file_name not in current_directory:  # Jika file tidak ada
             print(f"File '{file_name}' does not exist.")
-        elif current_directory[file_name] is None or not None:  # Jika file ada
+        elif current_directory[file_name] is None:  # Jika file ada
+            print(f"Size of file {file_name} 0 bytes")
+        elif current_directory[file_name] is not None:  # Jika file ada
             size = len(current_directory[file_name])
             print(f"Size of file {file_name} {size} bytes")

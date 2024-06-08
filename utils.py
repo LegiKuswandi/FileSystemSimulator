@@ -11,6 +11,7 @@ class UtilityCommands:
     # Menampilkan daftar perintah yang tersedia
     def help_command(self):
         print("Available commands:")
+        print("  root      : Initialize root directory")
         print("  help      : Display this help message")
         print("  listdir   : List files and directories in the current directory")
         print("  mkdir     : Create a new directory")
@@ -18,7 +19,6 @@ class UtilityCommands:
         print("  rmdir     : Remove a directory")
         print("  rmfile    : Remove a file")
         print("  cd        : Change directory")
-        print("  root      : Initialize root directory")
         print("  cls       : Clear the screen")
         print("  rename    : Rename a file or directory")
         print("  writefile : Write a file in the current directory")

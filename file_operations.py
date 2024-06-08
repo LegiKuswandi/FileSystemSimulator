@@ -2,10 +2,12 @@
 # Berisi operasi yang berkaitan dengan file (mkfile, rmfile, dll).
 
 import sys
+from utils import UtilityCommands
 
 class FileOperations:
     def __init__(self, command_handler):
         self.command_handler = command_handler  # Instance dari CommandHandler
+        self.utils = UtilityCommands(self)  # Instance untuk utilitas perintah
 
     # Membuat file baru
     def mkfile_command(self, file_name):
@@ -33,6 +35,7 @@ class FileOperations:
         if file_name not in current_directory:  # Jika file tidak ada
             print(f"File '{file_name}' does not exist.")
         elif current_directory[file_name] is None or not None:  # Jika file ada
+            self.utils.cls_command()
             print(f"============================================================================================")
             print(f" Writing file {file_name}")
             print(f"============================================================================================")
@@ -41,6 +44,7 @@ class FileOperations:
             content = sys.stdin.read()
             current_directory[file_name] = content
             print(f"File '{file_name}' succesfully edited.")
+            self.utils.cls_command()
         else:  # Jika bukan file
             print(f"'{file_name}' is not a file.")
 
@@ -50,6 +54,7 @@ class FileOperations:
         if file_name not in current_directory:  # Jika file tidak ada
             print(f"File '{file_name}' does not exist.")
         elif current_directory[file_name] is None:  # Jika file ada
+            self.utils.cls_command()
             print(f"============================================================================================")
             print(f"Opening file '{file_name}' ...")
             print(f"============================================================================================")
@@ -57,7 +62,9 @@ class FileOperations:
             print(f"============================================================================================")
             input("\n For exit, press enter.")
             print(f"============================================================================================")
+            self.utils.cls_command()
         elif current_directory[file_name] is not None:
+            self.utils.cls_command()
             print(f"============================================================================================")
             print(f"Opening file '{file_name}' ...")
             print(f"============================================================================================")
@@ -65,6 +72,7 @@ class FileOperations:
             print(f"============================================================================================")
             input("\n For exit, press enter.")
             print(f"============================================================================================")
+            self.utils.cls_command()
         else:  # Jika bukan file
             print(f"'{file_name}' is not a file.")
 

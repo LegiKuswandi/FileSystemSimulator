@@ -21,6 +21,9 @@ class UtilityCommands:
         print("  root      : Initialize root directory")
         print("  cls       : Clear the screen")
         print("  rename    : Rename a file or directory")
+        print("  writefile : Rename a file or directory")
+        print("  readfile  : Rename a file or directory")
+        print("  filesize  : Rename a file or directory")
         print("  shutdown  : Exit the CLI")
 
     # Menampilkan daftar file dan direktori dalam direktori saat ini

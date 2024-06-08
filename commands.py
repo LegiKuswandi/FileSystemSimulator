@@ -68,12 +68,9 @@ class CommandHandler:
             elif cmd == 'rename' and len(args) == 2:
                 self.utils.rename_command(args[0], args[1])
             elif cmd == 'writefile' and len(args) == 1:
-                self.utils.cls_command()
                 self.file_ops.writefile_command(args[0])
             elif cmd == 'readfile' and len(args) == 1:
-                self.utils.cls_command()
                 self.file_ops.readfile_command(args[0])
-                self.utils.cls_command()
             elif cmd == 'filesize' and len(args) == 1:
                 self.file_ops.filesize_command(args[0])
             elif cmd == 'cls':

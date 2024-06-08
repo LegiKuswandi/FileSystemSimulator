@@ -32,7 +32,7 @@ class CommandHandler:
                                 |_|                                                        
         """)
         print(Fore.CYAN + Style.BRIGHT +  "               ===========================")
-        print(Fore.CYAN + Style.BRIGHT +  "                   Welcome to Daoa OS  ")
+        print(Fore.CYAN + Style.BRIGHT +  "                   Welcome to DAL OS  ")
         print(Fore.CYAN + Style.BRIGHT +  "               ===========================\n")
         print(Fore.WHITE + Style.BRIGHT + "   Thank you for trying to use this OS!")
         print(Fore.WHITE + Style.BRIGHT + "   Hope you enjoy!")
